@@ -64,10 +64,10 @@ A list of all possible service and calls which are available in the REST API can
 
 Go ahead and launch Postman where we'll go through the following steps:
 
-- [Create a new request](####Create-a-new-request)
-- [Authentication](####Authentication)
-- [Send the request](####Send-the-request)
-- [Receive the response](####Receive-the-response)
+- [Create a new request](#Create-a-new-request)
+- [Authentication](#Authentication)
+- [Send the request](#Send-the-request)
+- [Receive the response](#Receive-the-response)
 
 #### Create a new request
 
@@ -164,6 +164,7 @@ See the [Definitions](https://docs.microsoft.com/en-us/rest/api/azure/devops/cor
 That's all there is to it. You can now go ahead and experiment with other services which are available in the [Azure DevOps REST API](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-5.1). You could for example get a list of all [teams](https://docs.microsoft.com/en-us/rest/api/azure/devops/core/teams/get%20all%20teams?view=azure-devops-rest-5.1) in your organization. 
 
 As you create new types of requests, make sure to carefully read the specifications of a specific call. A couple of things to keep in mind:
+
 - Make sure your PAT has a suitable scope and hasn't expired.
 - Use the correct HTTP verb (`GET`, `PUT`, `POST`, ...)
 - Point to the correct request URL, as these don't always start with `https://dev.azure.com/...`
