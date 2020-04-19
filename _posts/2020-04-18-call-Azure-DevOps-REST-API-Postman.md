@@ -64,10 +64,10 @@ A list of all possible service and calls which are available in the REST API can
 
 Go ahead and launch Postman where we'll go through the following steps:
 
-- [Create a new request](#Create-a-new-request)
-- [Authentication](#Authentication)
-- [Send the request](#Send-the-request)
-- [Receive the response](#Receive-the-response)
+- [Create a new request](#create-a-new-request)
+- [Authentication](#authentication)
+- [Send the request](#send-the-request)
+- [Receive the response](#receive-the-response)
 
 #### Create a new request
 
