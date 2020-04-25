@@ -1,6 +1,6 @@
 # Blog
 
-This repo contains my personal blog: **[https://sander.dev](https://sander.dev)**
+This repo contains my personal blog: **[https://sanderh.dev](https://sanderh.dev)**
 
 It runs on:
 
