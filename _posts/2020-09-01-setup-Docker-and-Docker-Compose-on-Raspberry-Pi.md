@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-This post will show you to install Docker and Docker-Compose on a clean Raspberry Pi:
+This post will show you how to install Docker and Docker-Compose on a clean Raspberry Pi:
 - `docker` cli is typically used to manage **individual containers**
 - `docker-compose` cli on the other hand is used to manage **multi-container** applications
 
