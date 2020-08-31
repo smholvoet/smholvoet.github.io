@@ -126,9 +126,13 @@ docker image rm hello-world
 
 ## Docker Compose install
 
-Installing `docker-compose` using the `apt` package manager will fail as Raspberry Pi's `arm` architecture is currently (August 2020) not supported 🤧.
+Installing `docker-compose` using the `apt` package manager will fail as Raspberry Pi's `arm` architecture is currently (August 2020) not supported 🤷‍♂.
 
-You'll most likely end up
+If you do feel brave and try and try using `apt-get`, you'll most likely end up with the following error when you try running `docker-compose`
+
+```bash
+/usr/local/bin/docker-compose: line 1: Not: command not found
+```
 
 Use the below `pip` installation method instead:
 
