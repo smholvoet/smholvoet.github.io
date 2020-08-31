@@ -1,0 +1,136 @@
+# exampleSite/config.yaml
+#
+# Configuration file for the demonstration of the Hugo-smorg theme,
+# mobile-first, responsive theme for the Hugo static site generator.
+# https://gohugo.io/
+
+# IMPORTANT:
+# themesDir is needed only to run exampleSite in-place; comment out or delete
+# this line for regular theme use:
+# themesDir: "../.."
+
+# Mandatory $.Site Variables ---------------------------------------------
+# Site variables are built-in to the Hugo application and can be accessed using
+# the {{ $.Site.variablename }} template directive.
+#
+# Every site needs these few: theme, baseURL, languageCode and title
+# Name of the theme your Hugo site uses; leave this in place:
+theme: "hugo-smorg"
+baseURL: "https://sanderh.dev"
+languageCode: "en-us"
+title: "CommonPlace.world"
+
+# Optional $.Site Variables ----------------------------------------------
+# More info on Site variables; https://gohugo.io/getting-started/configuration/
+#
+# Optional variables can be edited or commented out as desired.
+#
+# author name appears in RSS and Atom feeds;
+# author email address is optional and can be # commented out.
+#author:
+#    name: "CommonPlace.world"
+#    email: "aqumegeemail@gmail.com"
+
+# copyright appears in the default site footer
+copyright: "&copy; CommonPlace.world"
+
+# metaDataFormat for new content pages generated with the `hugo new` command if
+# not otherwise specified by an archetype. Hugo-Smorg theme examples all use
+# the easy to understand and write YAML format.
+metaDataFormat: yaml
+
+# summaryLength limits the number of words included in auto-generated page
+# summaries Manual control of summaries is possible using the <!--more-->
+# directive in content files. https://gohugo.io/content-management/summaries/
+summaryLength: 20
+
+# paginate sets the maximum number of items (pages) in a page listing.
+paginate: 2  # set very low for demo purposes only, 5 - 10 or more would be reasonable
+
+# GoogleAnalytics offers deep insight into how visitors use your site. It's
+# optional, and free: https://www.google.com/analytics/analytics/
+# Only uncomment if you have a GA UD:
+# GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
+
+# Disqus is a popular commenting system; to get an account visit:
+# https://disqus.com/admin/create/`
+# Uncommenting will result in Disqus capability extended to each blog post.
+# disqusShortname: "yourdiscussshortname"
+
+# Code oriented optional features:
+# pygments variables tune code syntax highlighting features Hugo provides
+pygmentsUseClasses: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsCodefences: true
+
+# enableGitInfo populates a .GitInfo object for each git-managed page
+# The theme does not currently make use of the information.
+enableGitInfo: false
+
+# enableRobotsTXT: <false> enables generation of site robots.txt from
+# front-matter directives. Many sites may prefer to create a robots.txt file in
+# the site content directory.
+enableRobotsTXT: true
+
+# enableEmoji: <false> enables Emoji rendering see:
+# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+enableEmoji: false
+
+
+
+
+
+
+
+
+# Optional Features ------------------------------------------------------
+
+# $.Site.Params variables are user-definable; the Hugo-Smorg theme makes use of
+# a number of variables to enable a certain amount of customization without
+# requiring editing of templates. See `docs/customizing.md` for more
+# information.
+
+# Access in templates via $.Site.Params.somevariablename
+params:
+    # debug: true causes template path to be output at top of page, handy for dev
+    debug: false
+
+
+    # only_feed_summaries: Include only Page summaries in Atom and RSS feeds.
+    only_feed_summaries: true
+
+    # fullname: Used in head and footer partials; Atom and RSS generation.
+    # JSON-LD microdata for search engines
+    fullname: "CommonPlace.world"
+
+    # Tagline under the logo
+    tagline: "Let's work together!"
+
+    # Description: Used per fullname.
+    description: "A space for people from all over to collaborate on projects together"
+
+    # Sites should customize their logo or wordmark here; Provided via partials/logo.html.
+    # used in default navigation and footer.
+    logotype: '<span class="has-text-weight-bold">Hugo-<span class="has-text-danger">smorg</span></span>'
+    footer: 'An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a>'
+    subfooter: '<i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
+
+
+# Primary Navigation Menu (partials/nav.html) ----------------------------
+
+# The exampleSite menu exploses About, Projects and Blog
+# Note that "About" is added to the menu within content/about.md - it's
+# not a true "section" like post and project, although you can change this.
+
+# NOTE: Don't put leading "/" in the url parameter
+menu:
+    sectionmenu:
+        - name: "About"
+          url: "about/"
+          identifier: "about"
+          weight: 10
+
+        - name: "Posts"
+          url: "posts/"
+          identifier: "posts"
+          weight: 20
