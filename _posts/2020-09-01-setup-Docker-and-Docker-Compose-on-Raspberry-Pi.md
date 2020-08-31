@@ -45,7 +45,7 @@ sudo apt update
 
 Check which packages can be upgraded:
 ```bash
-apt list --upgradable`
+apt list --upgradable
 ```
 
 Upgrade installed packages to latest version:
