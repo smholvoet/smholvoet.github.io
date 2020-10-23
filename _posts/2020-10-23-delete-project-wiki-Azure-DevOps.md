@@ -39,7 +39,7 @@ Have a look at one of my earlier posts which explains how to do so: [Call Azure 
 ```http
 GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=5.1
 ```
-Reponse:
+Response:
 ```json
 {
     "value": [
@@ -131,4 +131,4 @@ Response:
 }
 ```
 
-The above steps should have deleted your project wiki, leaving you with just the code wiki intact 🎉.
+The above steps should have deleted your project wiki, leaving you with just the code wiki intact 🎉
