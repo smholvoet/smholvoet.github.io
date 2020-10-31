@@ -13,6 +13,7 @@ tags:
 ## Introduction
 
 This post will show you how to install Docker and Docker-Compose on a clean Raspberry Pi:
+
 - `docker` cli is typically used to manage **individual containers**
 - `docker-compose` cli on the other hand is used to manage **multi-container** applications
 
@@ -39,16 +40,19 @@ Refer to the official 📖 [Raspberry Pi](https://www.raspberrypi.org/documentat
 By now you should've succesfully connected to your RPi via SSH. Next up, we'll update our packages:
 
 Update package list:
+
 ```bash
 sudo apt update
 ```
 
 Check which packages can be upgraded:
+
 ```bash
 apt list --upgradable
 ```
 
 Upgrade installed packages to latest version:
+
 ```bash
 sudo apt full-upgrade
 ```
@@ -58,16 +62,19 @@ sudo apt full-upgrade
 Docker itself provides a so called [*convenience script*](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) which automatically detects your distribution and takes care of all dependencies for you. Before blindly downloading & running it, have a 🕵 look at what's inside [here](https://github.com/docker/docker-install/blob/master/install.sh). These are the steps I used to install Docker:
 
 Download Docker's install script:
+
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
 
 Run it 🚀 and let it work its magic:
+
 ```bash
 sudo sh get-docker.sh
 ```
 
 We won't be needing this script anymore, so delete it:
+
 ```bash
 rm get-docker.sh
 ```
@@ -76,12 +83,14 @@ rm get-docker.sh
 
 In order to run Docker commands without adding `sudo` to all your commands, we'll add the current user to the `docker` security group.
 
-This will add the `pi` user to the `docker`group
+This will add the `pi` user to the `docker`group:
+
 ```bash
 sudo usermod -aG docker pi
 ```
 
 We'll have to logout and log back in before this will actually work, so type:
+
 ```bash
 logout
 ```
@@ -89,6 +98,7 @@ logout
 ### Verify Docker install
 
 Show the Docker version information:
+
 ```bash
 docker version
 ```
@@ -120,6 +130,7 @@ To generate this message, Docker took the following steps:
 ```
 
 Remove the image:
+
 ```bash
 docker image rm hello-world
 ```

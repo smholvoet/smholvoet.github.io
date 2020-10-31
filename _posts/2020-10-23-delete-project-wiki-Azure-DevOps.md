@@ -15,13 +15,12 @@ tags:
 ## Background
 
 Azure DevOps supports 2 types of project Wikis:
+
 - [**project wiki**](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops): users are able to add / edit pages directly within the specified Wiki
 - [**code wiki**](https://docs.microsoft.com/en-us/azure/devops/project/wiki/publish-repo-to-wiki?view=azure-devops&tabs=browser#publish-a-git-repository-to-a-wiki-1): markdown files are defined in a Git repo and published to the Wiki
 
-
 Upon creating a new wiki, you're greeted with the following screen:
 ![image-center](/assets/images/wiki_1.png){: .align-center}
-
 
 Whenever someone has already created a project Wiki, there seems to be **no way** to delete it going through the web UI 🙉 . This can get very annoying, especially when your team project contains a code wiki which lives next to the (default) project wiki. Clicking the **Overview > Wiki** menu will have users ending up in the default project wiki (which will be selected by default) instead of your code wiki, which can get confusing.
 
@@ -30,16 +29,18 @@ Whenever someone has already created a project Wiki, there seems to be **no way*
 Even though it seems like only the code wikis (obviously) have a git repo backing it, all content of provisioned wikis is stored in a dedicated repo as well. Deleting *this* repo will delete the project wiki in question.
 
 ## Solution
+
 We can do this by making use of the Azure DevOps REST API. Call the REST API using PowerShell or specialized tools like for example [Postman](https://www.postman.com/).
 Have a look at one of my earlier posts which explains how to do so: [Call Azure DevOps REST API with Postman](https://sanderh.dev/call-Azure-DevOps-REST-API-Postman/)
-
 
 **1) Let's first [get a list](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-5.1) of all Wikis in our team project:**
 
 ```http
 GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=5.1
 ```
-Response:
+
+**Response:**
+
 ```json
 {
     "value": [
@@ -81,10 +82,13 @@ Response:
 You can see both of our wikis are listed, each having a different `type` property. The first one being the project wiki (`"type": "projectWiki"`), and the second one being or code wiki (`"type": "codeWiki"`). Note the `repositoryId` of the project wiki (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example), which we'll be using in the next step.
 
 **2) [Delete](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.1) the project wiki in question by specifing the `wikiIdentifier`, which maps to the `repositoryId` (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example):**
+
 ```http
 DELETE https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=5.1
 ```
-Response:
+
+**Response:**
+
 ```json
 {
     "id": "1318cf4b-2653-4567-af6b-f8028d7d9e33",
@@ -104,10 +108,13 @@ Response:
 ```
 
 **3) Double check by re-running our first REST call:**
+
 ```http
 GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=5.1
 ```
-Response:
+
+**Response:**
+
 ```json
 {
     "value": [
