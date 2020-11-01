@@ -8,6 +8,7 @@ tags:
   - ARM
   - Azure
   - what-if
+  - IaC
   - validation
 ---
 
