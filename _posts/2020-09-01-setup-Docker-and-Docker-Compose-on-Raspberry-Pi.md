@@ -3,6 +3,7 @@ published: true
 title: "Setup Docker and Docker Compose on a Raspberry Pi "
 excerpt: "Setting up Docker and Docker Compose on a Raspberry Pi"
 date: 2020-09-01T00:00:00-04:00
+show_date: true
 tags:
   - Raspberry Pi
   - Raspbian

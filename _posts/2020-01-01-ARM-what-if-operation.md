@@ -1,10 +1,14 @@
 ---
-published: false
+published: true
 title: "ARM what-if operation"
-excerpt: ""
-date: 2020-10-31T00:00:00-04:00
+excerpt: "Validate ARM templates using the what-if operation"
+date: 2020-11-1T00:00:00-04:00
+show_date: true
 tags:
-  - todo
+  - ARM
+  - Azure
+  - what-if
+  - validation
 ---
 
 ## Introduction
@@ -15,7 +19,7 @@ In order to validate your ARM templates you can make use of the [what-if](https:
 
 ## Prerequisites
 
-The example below uses Azure CLI, but you may just as well use Azure PowerShell or the REST API. To follow along with the example below you'll need Azure CLI version **2.5.0** or above:
+The example below uses Azure CLI, but you may just as well use [Azure PowerShell](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell#azure-powershell) or the [REST API](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell#azure-rest-api). To follow along with the example below you'll need Azure CLI version **2.5.0** or above:
 
 - Install Azure CLI using [this](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) link
 - Check your current version by running `az --version` and run `az upgrade` if your version is too old (< **2.5.0**)
@@ -75,6 +79,8 @@ You should find 2 ARM templates:
 - `azuredeploy_update.json`: updated template which contains a modified description
 
 The templates which we'll be using are fairly simply and only contain a [storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
+
+**Template contents:**
 
 ```json
 {
@@ -153,6 +159,8 @@ az deployment group create  --name 'initialDeploy' `
 
 Execute what-if operation again, using the updated template this time. Notice how the `--template-file .\azuredeploy_update.json` parameter points to a different template this time. This template is exactly the same as the one we used earlier, except for the `displayName` property:
 
+**👉 azuredeploy.json:**
+
 ```json
 ...
         "tags": {
@@ -160,6 +168,8 @@ Execute what-if operation again, using the updated template this time. Notice ho
         },
 ...
 ```
+
+**👉 azuredeploy_update.json:**
 
 ```json
 ...
@@ -184,4 +194,4 @@ az deployment group what-if --name 'updateStorageSKU' `
 
 Looking good 👌. Should we deploy this template, only the `displayName` property will be changed, all other properties of our storage account will remain unchanged.
 
-The steps above showed you how to run the what-if operation, which allows you to simulate pending changes to your ARM template(s). Things get more interesting if you can apply these steps in your CI/CD pipeline(s), have a look at my [test](www.google.com) blog post.
+The steps above showed you how to run the what-if operation, which allows you to simulate pending changes to your ARM template(s). Things get more interesting if you can apply these steps in your CI/CD pipeline(s), which I'll go through in my next blog post.

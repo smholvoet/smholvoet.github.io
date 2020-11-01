@@ -3,6 +3,7 @@ published: true
 title: "Delete default project Wiki in Azure DevOps"
 excerpt: "Deleting the default project Wiki in Azure DevOps"
 date: 2020-10-23T00:00:00-04:00
+show_date: true
 tags:
   - Azure DevOps
   - VSTS

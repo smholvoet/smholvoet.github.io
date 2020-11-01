@@ -2,6 +2,7 @@
 title: "Call Azure DevOps REST API with Postman"
 excerpt: "Call the Azure DevOps REST API using Postman"
 date: 2020-04-18T00:00:00-04:00
+show_date: true
 tags:
   - Azure DevOps
   - VSTS

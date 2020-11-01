@@ -2,6 +2,7 @@
 title: "Flashing your Dell PERC H310 to IT firmware (UEFI)"
 excerpt: "Flashing your Dell PERC H310 storage card to IT firmware."
 date: 2020-04-24T00:00:00-04:00
+show_date: true
 tags:
   - Dell
   - firmware

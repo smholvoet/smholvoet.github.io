@@ -3,6 +3,7 @@ published: false
 title: "Dockerizing my home network: pihole, Unifi, portainer & watchtower"
 excerpt: "Dockerizing my home network: pihole, Unifi, portainer & watchtower"
 date: 2020-10-30T00:00:00-04:00
+show_date: true
 tags:
   - networking
   - UniFi
