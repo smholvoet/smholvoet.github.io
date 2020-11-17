@@ -34,7 +34,7 @@ Even though it seems like only the code wikis (obviously) have a git repo backin
 We can do this by making use of the Azure DevOps REST API. Call the REST API using PowerShell or specialized tools like for example [Postman](https://www.postman.com/).
 Have a look at one of my earlier posts which explains how to do so: [Call Azure DevOps REST API with Postman](https://sanderh.dev/call-Azure-DevOps-REST-API-Postman/)
 
-**1) Let's first [get a list](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-5.1) of all Wikis in our team project:**
+**1) Let's first [get a list](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/list) of all Wikis in our team project:**
 
 ```http
 GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=6.0
@@ -82,7 +82,7 @@ GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=
 
 You can see both of our wikis are listed, each having a different `type` property. The first one being the project wiki (`"type": "projectWiki"`), and the second one being or code wiki (`"type": "codeWiki"`). Note the `repositoryId` of the project wiki (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example), which we'll be using in the next step.
 
-**2) [Delete](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/delete?view=azure-devops-rest-6.0) the project wiki in question by specifing the `repositoryId` (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example). This will delete the underlying repository and get rid of the wiki:**
+**2) [Delete](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/delete?view=azure-devops-rest-6.0) the project wiki in question by specifing the `repositoryId` (**`1318cf4b-2653-4567-af6b-f8028d7d9e33` **in this example). This will delete the underlying repository and get rid of the wiki:**
 
 ```http
 DELETE https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repositoryId}?api-version=6.0
@@ -91,21 +91,7 @@ DELETE https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{re
 **Response:**
 
 ```json
-{
-    "id": "1318cf4b-2653-4567-af6b-f8028d7d9e33",
-    "versions": [
-        {
-            "version": "wikiMaster"
-        }
-    ],
-    "url": "https://dev.azure.com/fabrikamfiber/7c964ac3-ee1f-1234-9bfb-3bb5c5aff2d4/_apis/wiki/wikis/1318cf4b-2653-4567-af6b-f8028d7d9e33",
-    "remoteUrl": "https://dev.azure.com/fabrikamfiber/7c964ac3-ee1f-1234-9bfb-3bb5c5aff2d4/_wiki/wikis/1318cf4b-2653-4567-af6b-f8028d7d9e33",
-    "type": "projectWiki",
-    "name": "first-wiki.wiki",
-    "projectId": "7c964ac3-ee1f-1234-9bfb-3bb5c5aff2d4",
-    "repositoryId": "1318cf4b-2653-4567-af6b-f8028d7d9e33",
-    "mappedPath": "/"
-}
+Status code: 204
 ```
 
 **3) Double check by re-running our first REST call:**
