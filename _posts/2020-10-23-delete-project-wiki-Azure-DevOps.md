@@ -37,7 +37,7 @@ Have a look at one of my earlier posts which explains how to do so: [Call Azure 
 **1) Let's first [get a list](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/list?view=azure-devops-rest-5.1) of all Wikis in our team project:**
 
 ```http
-GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=5.1
+GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=6.0
 ```
 
 **Response:**
@@ -82,10 +82,10 @@ GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=
 
 You can see both of our wikis are listed, each having a different `type` property. The first one being the project wiki (`"type": "projectWiki"`), and the second one being or code wiki (`"type": "codeWiki"`). Note the `repositoryId` of the project wiki (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example), which we'll be using in the next step.
 
-**2) [Delete](https://docs.microsoft.com/en-us/rest/api/azure/devops/wiki/wikis/delete?view=azure-devops-rest-5.1) the project wiki in question by specifing the `wikiIdentifier`, which maps to the `repositoryId` (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example):**
+**2) [Delete](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/delete?view=azure-devops-rest-6.0) the project wiki in question by specifing the `repositoryId` (`1318cf4b-2653-4567-af6b-f8028d7d9e33` in this example). This will delete the underlying repository and get rid of the wiki:**
 
 ```http
-DELETE https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis/{wikiIdentifier}?api-version=5.1
+DELETE https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repositoryId}?api-version=6.0
 ```
 
 **Response:**
