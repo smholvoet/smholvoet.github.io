@@ -18,12 +18,12 @@ The below steps will show you how to use the built-in debugger and set breakpoin
 
 ## Symbol settings
 
-Navigate to **Tools > Options > Debugging > Symbols** and check **Load all modules, unless excluded**.
+Navigate to **Tools > Options > Debugging > Symbols** and check **Load all modules, unless excluded**:
 
 ![](/assets/images/\debugging-settings-2.png)
 
 
-Keep the same *Options* window open and navigate to **Dynamics 365 > Debugging**. Make sure **Load symbols only for items in the solution** is unchecked.
+Keep the same *Options* window open and navigate to **Dynamics 365 > Debugging**. Make sure **Load symbols only for items in the solution** is unchecked:
 
 ![](/assets/images/\debugging-settings-1.png)
 
@@ -41,7 +41,7 @@ Add the 🔴 [breakpoint](https://docs.microsoft.com/en-us/visualstudio/debugger
 
 ## Attach to process
 
-Navigate to **Debug > Attach to Process**, which will open the *Attach to Process* dialog box.
+Navigate to **Debug > Attach to Process**, which will open the *Attach to Process* dialog box:
 
 ![](/assets/images/\attach-to-process.png)
 
@@ -60,7 +60,7 @@ After selecting the correct process, click **Attach**. This will start the debug
 
 ## Launch browser
 
-Now launch F&O from your browser and call the `CustTable` form by going to **Accounts receivable > Customers > All customers**
+Now launch F&O from your browser and call the `CustTable` form by going to **Accounts receivable > Customers > All customers**:
 
 ![](/assets/images/\all-customers.png)
 
