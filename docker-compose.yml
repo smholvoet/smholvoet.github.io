@@ -1,8 +1,8 @@
-version: '3.7'
+version: '3.9'
 
 services:
   jekyll: 
-    image: jekyll/jekyll:3.8.5
+    image: jekyll/jekyll:3.8.6
     container_name: sanderh.dev.local
     environment:
         - JEKYLL_ENV=docker
