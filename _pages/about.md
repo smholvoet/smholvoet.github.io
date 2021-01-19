@@ -10,3 +10,7 @@ coffee, :runner: running, :robot: [home automation](https://github.com/home-assi
 
 I hope you found something interesting on this blog.<br/>
 Want to get in touch? Scroll down to find my socials or contact me on `holvoetsander[at]gmail[dot]com`.
+
+<center>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sanderh" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+</center>
