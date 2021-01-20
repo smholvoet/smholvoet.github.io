@@ -1,37 +1,42 @@
-title: sanderh.dev
-email:
-description: Sander's blog
-twitter_username: smholvoet
-github_username: smholvoet
-minimal_mistakes_skin: default
-search: true
+# Site settings:
+# --------------
+title                   : sanderh.dev
+description             : Sander's blog
+twitter_username        : smholvoet
+github_username         : smholvoet
+search                  : true
+repository              : smholvoet/smholvoet.github.io
+markdown                : kramdown
+remote_theme            : "mmistakes/minimal-mistakes@4.21.0"
+minimal_mistakes_skin   : "default"
+timezone                : Europe/Brussels
+locale                  : "en-US"
 
-# Build settings
-repository: smholvoet/mmblog123
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: Europe/Brussels
+# Site author:
+# ------------
+author:
+  name                  : "Sander Holvoet"
+  location              : "Belgium"
+  avatar                : "/assets/images/logo.jpg"
+  bio                   : "Roses are red, violets are blue unexpected '{' on line 32."
 
+# Outputting:
+# -----------
+permalink               : /:categories/:title/
+paginate                : 5
+paginate_path           : /page:num/
+
+# Includes:
+# --------
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# Excludes:
+# ---------
 # exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
-# Plugins (previously gems:)
+# Plugins:
+# --------
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -40,12 +45,8 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "Sander Holvoet"
-  location: "Belgium"
-  avatar : "/assets/images/logo.jpg"
-  bio    : "Roses are red, violets are blue unexpected '{' on line 32."
-
+# Footer:
+# -------
 footer:
   links:
     - label: ""
@@ -58,45 +59,49 @@ footer:
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/sanderholvoet/"
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      classes: wide
-      author_profile: true
-      read_time: true
-      comments: true
-      share: false
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# category_archive:
-#  type: liquid
-#  path: /categories/
+# Tag archive:
+# ------------
 tag_archive:
   type: liquid
   path: /tags/
 
+# Disqus:
+# -------
 comments:
   provider: "disqus"
   disqus:
     shortname: "sanderholvoet"
 
-# supress GitHub API warning when building locally
-github: [metadata]
-
-# Google Analytics
+# Google Analytics:
+# -----------------
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "UA-11490748-6"
     anonymize_ip: false # default
+
+# Defaults:
+# ---------
+  defaults:
+    # _posts
+    - scope:
+        path: ""
+        type: posts
+      values:
+        layout: single
+        classes: wide
+        author_profile: true
+        read_time: true
+        comments: true
+        share: false
+        related: true
+    # _pages
+    - scope:
+        path: "_pages"
+        type: pages
+      values:
+        layout: single
+        author_profile: true
+
+# suppresses GitHub API warning when building locally
+github: [metadata]
