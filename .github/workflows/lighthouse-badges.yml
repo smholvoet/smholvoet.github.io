@@ -7,7 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Generate lighthouse badges
         run: |
-          docker run --rm \
-              -v $PWD/test_results:/home/chrome/reports \
-              emazzotta/lighthouse-badges \
-              /bin/sh -c "lighthouse-badges --urls https://sanderh.dev"
+          npm i -g lighthouse-badges
+          lighthouse-badges --urls https://www.youtube.com/ https://www.youtube.com/feed/trending -o test_results
