@@ -97,7 +97,7 @@ Nearly there. Make sure to reset your card one final time. We can now verify whe
 
 ![image-center](/assets/images/perc_3.png){: .align-center}
 
-You should see something similar to the picture above.  The **NVDATA Product ID, Board Name** and **NVDATA Vendor** show you that the card is being the detected as a **SAS9211-8i. **The **Firmware Product ID** and **Firmware Version** confirm that we've successfully loaded the LSI P19 IT firmware onto the card.
+You should see something similar to the picture above.  The **NVDATA Product ID, Board Name** and **NVDATA Vendor** show you that the card is being the detected as a **SAS9211-8i**. The **Firmware Product ID** and **Firmware Version** confirm that we've successfully loaded the LSI P19 IT firmware onto the card.
 
 Last thing to do now is to restore the original SAS address which you should've written down somewhere as I explained earlier:
 `sas2flash_p19.efi -o -sasadd <your 16-digit SAS address>`

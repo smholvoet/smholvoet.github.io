@@ -31,25 +31,25 @@ version 3.8
 
 ## Watchtower
 
-- 📝 https://github.com/containrrr/watchtower
-- 🐋 https://hub.docker.com/r/containrrr/watchtower
+- 📝 [GitHub](https://github.com/containrrr/watchtower)
+- 🐋 [Docker Hub](https://hub.docker.com/r/containrrr/watchtower)
 
 ## Portainer
 
-- 📝 https://github.com/portainer/portainer
-- 🐋 https://hub.docker.com/r/portainer/portainer
+- 📝 [GitHub](https://github.com/portainer/portainer)
+- 🐋 [Docker Hub](https://hub.docker.com/r/portainer/portainer)
 
 ## pi-hole
 
-- 📝 https://github.com/pi-hole/pi-hole
-- 🐋 https://hub.docker.com/r/pihole/pihole/
+- 📝 [GitHub](https://github.com/pi-hole/pi-hole)
+- 🐋 [Docker Hub](https://hub.docker.com/r/pihole/pihole/)
 
 ## Unifi
 
-- 📝 https://github.com/jacobalberty/unifi-docker
-- 🐋 https://hub.docker.com/r/jacobalberty/unifi
+- 📝 [GitHub](https://github.com/jacobalberty/unifi-docker)
+- 🐋 [Docker Hub](https://hub.docker.com/r/jacobalberty/unifi)
 
 ## Rpi-monitor
 
-- 📝 https://github.com/XavierBerger/RPi-Monitor
-- 🐋 https://hub.docker.com/r/michaelmiklis/rpi-monitor
+- 📝 [GitHub](https://github.com/XavierBerger/RPi-Monitor)
+- 🐋 [Docker Hub](https://hub.docker.com/r/michaelmiklis/rpi-monitor)
