@@ -1,0 +1,13 @@
+name: Lighthouse badges
+on: push
+jobs:
+  lighthouse-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate lighthouse badges
+        run: |
+          docker run --rm \
+              -v $PWD/test_results:/home/chrome/reports \
+              emazzotta/lighthouse-badges \
+              /bin/sh -c "lighthouse-badges --urls https://sanderh.dev"
