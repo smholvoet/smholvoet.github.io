@@ -314,6 +314,6 @@ Navigate to **File > Preferences > Settings** and search for "commit signing". S
 ## Try it out
 
 Make some local changes, commit and push them to GitHub... and you should see a nice  
- ✅ `Verified` badge next to your commmit ID:
+ ✅ `Verified` badge next to your commit ID:
 
 ![Signed commit](/assets/images/signed-commit.png)
