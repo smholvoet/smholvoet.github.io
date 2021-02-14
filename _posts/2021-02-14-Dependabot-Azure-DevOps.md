@@ -133,7 +133,7 @@ In the first step, we're simply cloning the [`dependabot-script`](https://github
   displayName: pull dependabot-core Docker image
 ```
 
-Pull the [dependabot/dependabot-core](https://hub.docker.com/r/dependabot/dependabot-core/tags?page=1&ordering=last_updated) from 🐳 Docker Hub, which contains the core logic behind Dependabot's update PR creation.
+Pull the [dependabot/dependabot-core](https://hub.docker.com/r/dependabot/dependabot-core/tags?page=1&ordering=last_updated) image from 🐳 Docker Hub, which contains the core logic behind Dependabot's update PR creation.
 
 ### Install dependencies
 
