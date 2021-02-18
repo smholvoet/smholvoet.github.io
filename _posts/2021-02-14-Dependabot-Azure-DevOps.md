@@ -54,7 +54,7 @@ update_configs:
     update_schedule: "daily"
 ```
 
-Unfortunately , there is no native integration with Azure DevOps 🤷‍♂️. However, using the [Dependabot Update Script](https://github.com/dependabot/dependabot-script) (which leverages the Dependabot Core logic), we *can* make 🤖 Dependabot play nice with Azure DevOps.
+Unfortunately, there is no native integration with Azure DevOps 🤷‍♂️. However, using the [Dependabot Update Script](https://github.com/dependabot/dependabot-script) (which leverages the Dependabot Core logic), we *can* make 🤖 Dependabot play nice with Azure DevOps.
 
 I've set up a pipeline which lets Dependabot work its magic in a .NET project containing multiple [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) files.
 
