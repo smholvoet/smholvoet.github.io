@@ -73,7 +73,7 @@ curl: (6) Could not resolve host: api.githubxyz.com
 
 ### Authentication
 
-Most API's will require some form of authentication. curl handles authentication by using the `-u` (or `--user`) option. 
+Most API's will require some form of authentication. curl handles authentication by using the `-u` (or `--user`) option.
 You could specify the username and password:
 
 ```bash
