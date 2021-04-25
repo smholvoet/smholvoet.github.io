@@ -1,0 +1,80 @@
+<mxfile>
+    <diagram id="B0RxFnrM1Wqr3TOvaZG3" name="Page-1">
+        <mxGraphModel dx="1706" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="45" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;strokeColor=#007FFF;fillColor=none;dashed=1;dashPattern=1 2;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="280" width="170" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="18" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Azure_Pipelines&#9;.svg;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="320" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="26" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="75.5" y="404.5"/>
+                            <mxPoint x="75.5" y="404.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="schedule" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Clock.svg;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="52.5" y="414.5" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="microsoft/azure-pipelines-agent" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.weblogos.github;fontColor=#007FFF;spacingBottom=3;" parent="1" vertex="1">
+                    <mxGeometry x="167.5" y="190" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="37" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.433;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#007FFF;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="37" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="latest" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.cloud_service_package_file;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="176.25" y="320" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Virtual_Machine_2.svg;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="300" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Virtual_Machine_2.svg;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="300" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Virtual_Machine_2.svg;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="375" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.722;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#007FFF;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="45" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#007FFF;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="46" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="480"/>
+                            <mxPoint x="380" y="480"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="update&lt;br&gt;trigger" style="verticalLabelPosition=middle;html=1;verticalAlign=middle;align=left;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.automation;pointerEvents=1;labelPosition=right;fontColor=#007FFF;spacingRight=3;spacingLeft=6;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="322.5" width="50" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;font style=&quot;font-size: 14px&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;[1]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="280" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;font style=&quot;font-size: 14px&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;[2]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="227.5" y="345" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;font style=&quot;font-size: 14px&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;[3]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="357.5" y="230" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;font style=&quot;font-size: 14px&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;[4]&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#007FFF;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="450" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="shape=mxgraph.bpmn.loop;html=1;outlineConnect=0;fontColor=#ffffff;strokeWidth=3;fillColor=#fa6800;strokeColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="357.5" y="260" width="40" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
