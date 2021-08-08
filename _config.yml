@@ -7,7 +7,7 @@ github_username         : smholvoet
 search                  : true
 repository              : smholvoet/smholvoet.github.io
 markdown                : kramdown
-remote_theme            : "mmistakes/minimal-mistakes@4.22.0"
+remote_theme            : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin   : "default"
 timezone                : Europe/Brussels
 locale                  : "en-US"
