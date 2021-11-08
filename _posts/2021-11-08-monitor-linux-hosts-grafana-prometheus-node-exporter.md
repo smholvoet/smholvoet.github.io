@@ -55,13 +55,13 @@ Now copy the snippet and the bottom, replacing your API key int he process:
 remote_write:
 - url: https://prometheus-prod-01-eu-west-0.grafana.net/api/prom/push
   basic_auth:
-    username: 246586
+    username: 123456
     password: < 🔑 API Key goes here >
 ```
 
 We'll use these details to configure Prometheus later on in this post.
 
-## Docker Compose 🐳
+## Docker Compose
 
 Create a `docker-compose.yml` file containing the code below:
 
