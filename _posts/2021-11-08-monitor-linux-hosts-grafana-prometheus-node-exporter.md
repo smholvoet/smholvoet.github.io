@@ -114,7 +114,7 @@ networks:
 The above Docker Compose contains just 2 containers:
 
 - [Node exporter](https://github.com/prometheus/node_exporter), which as the name suggests will be responsible for exporting hardware and OS metrics exposed by our Linux host.
-- [Prometheus](https://prometheus.io/) is a time-series database similar to [InfluxDB](https://www.influxdata.com). It will retreive the data from Node exporter, store it and pass it onto our Grafana Cloud instance. This is done using the [remote-write](https://grafana.com/docs/grafana-cloud/metrics-prometheus/#prometheus-metrics) future of Grafana.
+- [Prometheus](https://prometheus.io/) is a time-series database similar to [InfluxDB](https://www.influxdata.com). It will retreive the data from Node exporter, store it and pass it onto our Grafana Cloud instance. This is done using the [remote-write](https://grafana.com/docs/grafana-cloud/metrics-prometheus/#prometheus-metrics) feature of Grafana.
 
 ## Prometheus configuration
 
