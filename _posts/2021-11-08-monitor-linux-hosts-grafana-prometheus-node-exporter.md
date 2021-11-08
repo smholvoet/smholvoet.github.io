@@ -206,7 +206,7 @@ prometheus          | ts=2021-11-08T16:06:04.287Z caller=dedupe.go:112 component
 
 ## Grafana dashboard setup
 
-Let's first verify whether Grafana is actually receiving metrics from Prometheus. Click the Explore tab at the left, select your Prometheus instance at the top left and open the metrics browser. This dropdown should contain a list of all the metrics which node exporter was able to scrape from your host system:
+Let's first verify whether Grafana is actually receiving metrics from Prometheus. Click the **Explore** tab at the left, select your Prometheus instance at the top left and open the *Metrics browser*. This dropdown listshould contain a list of all the metrics which node exporter was able to scrape from your host system:
 
 ![grafana-metrics-explorer](/assets/images/grafana-metrics-explorer.png){: .align-center}
 
