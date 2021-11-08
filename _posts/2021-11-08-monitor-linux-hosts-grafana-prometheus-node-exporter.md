@@ -49,7 +49,7 @@ Give your API key a meaningful name and make sure to assign the **MetricsPublish
 
 ![grafana-api-key](/assets/images/grafana-api-key.png){: .align-center}
 
-Now copy the snippet and the bottom, replacing your API key int he process:
+Now copy the snippet and the bottom, replacing your API key in the process:
 
 ```yaml
 remote_write:
