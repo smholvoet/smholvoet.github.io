@@ -217,7 +217,7 @@ If you can't see any metrics here, have a look at the [logs](https://docs.docker
 
 We'll now import the [Node Exporter Full](https://grafana.com/grafana/dashboards/1860) dashboard. If you're interested, you can have a look at the code behind this, over at <i class="fab fa-github"></i> [rfrail3/grafana-dashboards](https://github.com/rfrail3/grafana-dashboards).
 
-From the left menu, navigate to **Dashboards > Manage** and click the **Import** button. 
+From the left menu, navigate to **Dashboards > Manage** and click the **Import** button.
 
 Insert `1860` (which is the unique ID of our dashboard) and click **Load**. You should now see the dashboard which you've just added:
 
