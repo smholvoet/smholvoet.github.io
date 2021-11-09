@@ -24,6 +24,8 @@ I've recently started using the setup below to scrape metrics from my [Raspberry
 2. 🗄️ *Prometheus* stores all metrics and pushes them to *Grafana*
 3. 📈 *Grafana* visualizes all metrics via a centralized dashboard
 
+![grafana-flow](/assets/images/grafana-flow.png){: .align-center}
+
 I'm making use of *Grafana Cloud* (SaaS), but you might just as well run *Grafana* in a separate [docker container](https://grafana.com/docs/grafana/latest/installation/docker/), or add it to *Docker Compose*.
 {: .notice--warning}
 
