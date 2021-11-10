@@ -2,8 +2,6 @@
 # --------------
 title                   : sanderh.dev
 description             : Sander's blog
-twitter_username        : smholvoet
-github_username         : smholvoet
 search                  : true
 repository              : smholvoet/smholvoet.github.io
 markdown                : kramdown
@@ -80,6 +78,17 @@ analytics:
   google:
     tracking_id: "UA-11490748-6"
     anonymize_ip: false # default
+
+# Socials:
+# -----------------
+twitter:
+  username: "smholvoet"
+og_image: "/assets/images/logo.jpg"
+social:
+  name: smholvoet
+  links:
+    - https://twitter.com/
+    - https://github.com/
 
 # Defaults:
 # ---------
