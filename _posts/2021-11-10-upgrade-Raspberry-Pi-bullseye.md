@@ -2,7 +2,7 @@
 published: true
 title: "Upgrading your Raspberry Pi to Bullseye"
 excerpt: "Upgrading your Raspberry Pi to Bullseye"
-date: 2020-11-10T00:00:00-04:00
+date: 2021-11-10T00:00:00-04:00
 show_date: true
 tags:
   - Raspberry Pi
