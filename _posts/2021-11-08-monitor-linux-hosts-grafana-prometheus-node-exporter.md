@@ -1,7 +1,7 @@
 ---
 published: true
 title: "Monitoring Linux hosts using Grafana Cloud, Prometheus and Node Exporter"
-excerpt: "Automating Azure DevOps agent updates"
+excerpt: "Monitoring Linux hosts using Grafana Cloud, Prometheus and Node Exporter"
 date: 2021-11-08T00:00:00-04:00
 show_date: true
 tags:
