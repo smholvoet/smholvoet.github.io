@@ -2,7 +2,6 @@
 # --------------
 title                   : sanderh.dev
 description             : Sander's blog
-search                  : true
 repository              : smholvoet/smholvoet.github.io
 markdown                : kramdown
 remote_theme            : "mmistakes/minimal-mistakes@4.24.0"
@@ -31,7 +30,8 @@ include:
 
 # Excludes:
 # ---------
-# exclude:
+exclude:
+  - vendor
 
 # Plugins:
 # --------
@@ -80,7 +80,7 @@ analytics:
     anonymize_ip: false # default
 
 # Socials:
-# -----------------
+# --------
 twitter:
   username: "smholvoet"
 og_image: "/assets/images/logo.jpg"
@@ -89,6 +89,17 @@ social:
   links:
     - https://twitter.com/
     - https://github.com/
+
+# Algolia Search:
+# ---------------
+search: true
+search_full_content: true
+search_provider: algolia
+algolia:
+  application_id: XTI9UCVDW2
+  index_name: prod_sanderh
+  search_only_api_key: c3a3d16dc59221f7fd7914a568f2a113
+  powered_by: true
 
 # Defaults:
 # ---------
