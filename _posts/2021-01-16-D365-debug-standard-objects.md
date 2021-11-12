@@ -42,7 +42,7 @@ Add the 🔴 [breakpoint](https://docs.microsoft.com/en-us/visualstudio/debugger
 
 Navigate to **Debug > Attach to Process**, which will open the *Attach to Process* dialog box:
 
-[!Attach to process 1](/assets/images/\attach-to-process.png)
+![Attach to process 1](/assets/images/\attach-to-process.png)
 
 ![Attach to process 2](/assets/images/\attach-to-process-2.png)
 
