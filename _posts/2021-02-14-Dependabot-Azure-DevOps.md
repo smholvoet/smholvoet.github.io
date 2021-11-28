@@ -14,7 +14,7 @@ tags:
 
 ![image-center](/assets/images/dependabot_AzDo_logo.png){: .align-center}
 
-Keeping track of any outdated dependecies can be a real nightmare, especially if you have lots of them.
+Keeping track of any outdated dependencies can be a real nightmare, especially if you have lots of them.
 This is where **Dependabot**  enters the ring.
 
 From the [Dependabot](https://dependabot.com/) website:
@@ -62,7 +62,7 @@ I've set up a pipeline which lets Dependabot work its magic in a .NET project co
 - Pull `dependabot/dependabot-core` Docker image
 - Install dependencies
 - Scan the entire repository for any `packages.config` files, containing .NET dependencies
-- Dependabot automagically opens a seperate PR for every out-of-date dependency
+- Dependabot automagically opens a separate PR for every out-of-date dependency
 - Profit 🍾
 
 ![dependabot-flow](/assets/images/dependabot-flow.png){: .align-center}
@@ -188,7 +188,7 @@ As  you can see, I make use of a couple of [predefined variables](https://docs.m
 - `SYSTEM_TEAMPROJECT`: The name of the team project that contains the pipeline.
 - `BUILD_REPOSITORY_NAME`: The name of the triggering repository.
 
-The variables aboved are appended and used to construct the `$PROJECT_PATH`. The variable contains the [remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) which Dependabot will need in order to know *where* exactly it needs to create any pull requests. The `$PROJECT_PATH` will look like this: `<org>/<project>/_git/<repo>`.
+The variables above are appended and used to construct the `$PROJECT_PATH`. The variable contains the [remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) which Dependabot will need in order to know *where* exactly it needs to create any pull requests. The `$PROJECT_PATH` will look like this: `<org>/<project>/_git/<repo>`.
 
 ### Scan for package manifests
 
@@ -240,6 +240,6 @@ This is what the end result looks like:
 
 ![dependabot-results-2](/assets/images/dependabot-results-2.png)
 
-Dependabot created a seperate branch for any outdated package it found, and raised a pull request 🔥🔥🔥.
+Dependabot created a separate branch for any outdated package it found, and raised a pull request 🔥🔥🔥.
 
-Combined with the necessary branch policies (e.g. [build validation](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#build-validation)), you could make sure any updated packages won't break your build. All in all a great tool which takes care of depedency scanning for you 💪.
+Combined with the necessary branch policies (e.g. [build validation](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#build-validation)), you could make sure any updated packages won't break your build. All in all a great tool which takes care of dependency scanning for you 💪.

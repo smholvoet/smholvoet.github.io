@@ -156,7 +156,7 @@ az deployment group create  --name 'initialDeploy' `
                             --parameters .\azuredeploy.parameters.json
 ```
 
-### Mofidy resources
+### Modify resources
 
 Execute what-if operation again, using the updated template this time. Notice how the `--template-file .\azuredeploy_update.json` parameter points to a different template this time. This template is exactly the same as the one we used earlier, except for the `displayName` property:
 
