@@ -38,7 +38,7 @@ Refer to the official 📖 [Raspberry Pi](https://www.raspberrypi.org/documentat
 
 ### Upgrade packages
 
-By now you should've succesfully connected to your RPi via SSH. Next up, we'll update our packages:
+By now you should've successfully connected to your RPi via SSH. Next up, we'll update our packages:
 
 Update package list:
 

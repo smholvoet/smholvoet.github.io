@@ -29,7 +29,7 @@ When using a REST API, you'd typically go through the following steps:
     VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
     ```
 
-3. **Receive a response:** After you've succesfully authenticated and sent out a valid request, you'll receive the requested data in [JSON](http://json.org/) format:
+3. **Receive a response:** After you've successfully authenticated and sent out a valid request, you'll receive the requested data in [JSON](http://json.org/) format:
 
     ```json
     {
@@ -53,7 +53,7 @@ A quick and easy way to access the Azure DevOps REST API is the [Postman](https:
 
 This means that the Postman GUI pretty much goes through the exact same steps mentioned above, without requiring you to write any code. You could for example just as well access the Azure DevOps REST API using PowerShell's [`Invoke-RestMethod`](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7) function. This method does however expects you to:
 
-- take care of authenication yourself: you'll need to encode the PAT (Personal Access Token) to a Base64 string and add it to the HTTP header.
+- take care of authentication yourself: you'll need to encode the PAT (Personal Access Token) to a Base64 string and add it to the HTTP header.
 - construct the request body in JSON format and pass it to the `-Body` parameter if the service in question expects one.
 - parse the response in a readable format, using the [`ConvertFrom-Json`](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/convertfrom-json?view=powershell-7) function for example
 - ...
@@ -112,7 +112,7 @@ https://dev.azure.com/{organization}/_apis/projects?api-version=5.1
 
 #### Receive the response
 
-Now that we've constructed the request messsage, click the **Send** button, located to the right of the request URL. If all goes well you should now see a reponse:
+Now that we've constructed the request message, click the **Send** button, located to the right of the request URL. If all goes well you should now see a response:
 
 ```json
 {
@@ -151,7 +151,7 @@ Now that we've constructed the request messsage, click the **Send** button, loca
 }
 ```
 
-You should now see a list of all team projecs contained within your Azure DevOps organization in [JSON](http://json.org/) format. Each object contains the following data:
+You should now see a list of all team projects contained within your Azure DevOps organization in [JSON](http://json.org/) format. Each object contains the following data:
 
 - **id:** Project identifier (GUID).
 - **name:** Project name.

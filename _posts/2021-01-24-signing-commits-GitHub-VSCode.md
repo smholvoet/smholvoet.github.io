@@ -33,7 +33,7 @@ As you can see, we'll need *GnuPG*, commonly referred to as [**GPG**](https://gn
 
 Download & install [GnuPG](https://www.gnupg.org/download/)
 
-Verify succesful installation by running:
+Verify successful installation by running:
 
 ```terminal
 gpg --version
@@ -114,7 +114,7 @@ Next up, enter the following information:
 - Comment: you can leave this blank
 
 ```terminal
-GnuPG needs to construct a user ID to identiy your key.
+GnuPG needs to construct a user ID to identify your key.
 
 Real name: Test User
 Email address: test@example.com
@@ -220,13 +220,13 @@ In the *Key Pair Creation Wizard*:
 
 - Enter your **Name** and **Email**.
 - Tick the **Protect the generated key with a passphrase.** checkbox.
-- Go to **Advanced Settings...** and make sure to set the number of RSA bits to **4.096** as  this is a prequisite for GitHub.
+- Go to **Advanced Settings...** and make sure to set the number of RSA bits to **4.096** as  this is a prerequisite for GitHub.
 
 ![Kleopatra wizard](/assets/images/kleopatra-wizard-1.png)
 
 ![Kleopatra wizard](/assets/images/kleopatra-wizard-2.png)
 
-You'll be promted to enter a passphrase, after which the key pair will be generated:
+You'll be prompted to enter a passphrase, after which the key pair will be generated:
 
 ![Kleopatra wizard](/assets/images/kleopatra-wizard-3.png)
 
