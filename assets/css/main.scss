@@ -5,10 +5,10 @@
 @charset "utf-8";
 
 /* override footer icon colors */
-$twitter-color: #99a0a3;
-$github-color: #99a0a3;
-$linkedin-color: #99a0a3;
-$rss-color: #99a0a3;
+$twitter-color: (#99a0a3);
+$github-color: (#99a0a3);
+$linkedin-color: (#99a0a3);
+$rss-color: (#99a0a3);
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
