@@ -41,7 +41,7 @@ As you can see we'll need a USB drive. It doesn't have to be anything fancy as t
 
 ![image-center](/assets/images/perc_2.png){: .align-center}
 
-We could now grab the latest firmware from Dell's [website](http://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=YJ78T&fileId=2731103519) and transfer it to our USB drive. I however opted to download a [file]((http://sandbox;mediafire.com/download/4cp76bj5dk170wk/LSI-9211-8i.zip)) which I've found on numerous blog posts and fora and contains all the necessary tools and firmware that we'll need.  Transfer the contents of this .rar file to your USB drive and reboot.
+We could now grab the latest firmware from Dell's [website](http://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=YJ78T&fileId=2731103519) and transfer it to our USB drive. I however opted to download a [file](http://sandbox.mediafire.com/download/4cp76bj5dk170wk/LSI-9211-8i.zip) which I've found on numerous blog posts and fora and contains all the necessary tools and firmware that we'll need.  Transfer the contents of this .rar file to your USB drive and reboot.
 
 ## Detecting your card & getting the SAS-address
 

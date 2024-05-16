@@ -13,7 +13,7 @@ tags:
 
 If you have a use case where you need to allow inbound connection from Azure DevOps Microsoft-hosted agents to your App Service, you're in for quite the ride... 🎢
 
-## Azure DevOps networking and weekly JSON files...
+## Azure DevOps networking and weekly JSON files
 
 Having a look at the [Inbound connections](https://learn.microsoft.com/en-us/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4#inbound-connections) section of the Azure DevOps documentation will make you feel like you've come to the right place. Just get the IP ranges for your specific region and add those, right?
 
