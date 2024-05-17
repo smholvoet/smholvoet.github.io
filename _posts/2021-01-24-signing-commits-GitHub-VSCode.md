@@ -110,7 +110,7 @@ Is this correct? (y/N)
 Next up, enter the following information:
 
 - Real name: Test User
-- Email address: test@example.com
+- Email address: <test@example.com>
 - Comment: you can leave this blank
 
 ```terminal
