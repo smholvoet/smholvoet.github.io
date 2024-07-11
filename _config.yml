@@ -76,7 +76,7 @@ comments:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-09DZNZ9TXW"
+    tracking_id: "G-PZPE93ENH9"
     anonymize_ip: false # default
 
 # Socials:
