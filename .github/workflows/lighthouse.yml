@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.2
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@12.1.0
+        uses: treosh/lighthouse-ci-action@12.6.1
         with:
           urls: |
             https://sanderh.be
